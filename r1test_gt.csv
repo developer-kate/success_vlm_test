@@ -1,0 +1,718 @@
+Meta-Action Label,Start Time (s),End Time (s)
+[1] error,0,3.04
+[7] Picking left,3.04,3.44
+[6] Picking in front,3.44,3.87
+[7] Picking left,3.87,4.24
+[6] Picking in front,4.24,4.67
+[6] Picking in front,4.67,5.04
+[6] Picking in front,5.04,5.41
+[6] Picking in front,5.41,5.91
+[6] Picking in front,5.91,6.37
+[6] Picking in front,6.37,6.74
+[6] Picking in front,6.74,7.14
+[6] Picking in front,7.14,7.51
+[6] Picking in front,7.51,7.91
+[6] Picking in front,7.91,8.34
+[6] Picking in front,8.34,8.71
+[6] Picking in front,8.71,10.34
+[7] Picking left,10.34,11.31
+[7] Picking left,11.31,11.71
+[7] Picking left,11.71,12.18
+[7] Picking left,12.18,12.81
+[6] Picking in front,12.81,14.45
+[12] Assemble system,14.45,15.15
+[12] Assemble system,15.15,15.98
+[12] Assemble system,15.98,17.22
+[12] Assemble system,17.22,17.88
+[11] Put down subsystem,17.88,19.82
+[1] Meta action,19.82,21.96
+[1] Meta action,21.96,22.49
+[12] Assemble system,22.49,22.86
+[6] Picking in front,22.86,23.42
+[5] Put down screwdriver,23.42,23.82
+[6] Picking in front,23.82,24.19
+[6] Picking in front,24.19,24.56
+[12] Assemble system,24.56,25.03
+[12] Assemble system,25.03,29.06
+[6] Picking in front,29.06,29.93
+[12] Assemble system,29.93,30.33
+[1] Meta action,30.33,30.73
+[7] Picking left,30.73,31.26
+[7] Picking left,31.26,32.43
+[11] Put down subsystem,32.43,32.83
+[1] Meta action,32.83,35.1
+[2] Consult sheets,35.1,35.5
+[12] Assemble system,35.5,35.97
+[5] Put down screwdriver,35.97,36.57
+[7] Picking left,36.57,36.97
+[10] Take subsystem,36.97,37.37
+[10] Take subsystem,37.37,37.74
+[12] Assemble system,37.74,38.37
+[12] Assemble system,38.37,38.91
+[1] error,38.91,39.37
+[5] Put down screwdriver,39.37,39.87
+[5] Put down screwdriver,39.87,41.78
+[12] Assemble system,41.78,42.28
+[12] Assemble system,42.28,42.98
+[12] Assemble system,42.98,43.41
+[12] Assemble system,43.41,44.38
+[12] Assemble system,44.38,44.78
+[12] Assemble system,44.78,45.65
+[12] Assemble system,45.65,46.31
+[12] Assemble system,46.31,46.71
+[11] Put down subsystem,46.71,47.38
+[12] Assemble system,47.38,47.75
+[1] error,47.75,48.21
+[1] Meta action,48.21,48.58
+[7] Picking left,48.58,49.05
+[2] Consult sheets,49.05,49.55
+[1] Meta action,49.55,49.92
+[2] Consult sheets,49.92,50.58
+[2] Consult sheets,50.58,50.95
+[3] Turn sheets,50.95,51.75
+[2] Consult sheets,51.75,52.12
+[6] Picking in front,52.12,52.69
+[12] Assemble system,52.69,53.09
+[1] Meta action,53.09,53.89
+[6] Picking in front,53.89,54.72
+[6] Picking in front,54.72,55.09
+[6] Picking in front,55.09,55.69
+[6] Picking in front,55.69,56.22
+[6] Picking in front,56.22,56.69
+[6] Picking in front,56.69,57.06
+[6] Picking in front,57.06,57.49
+[6] Picking in front,57.49,58.29
+[7] Picking left,58.29,58.93
+[7] Picking left,58.93,59.33
+[10] Take subsystem,59.33,59.96
+[7] Picking left,59.96,60.33
+[12] Assemble system,60.33,60.93
+[1] Meta action,60.93,61.33
+[4] Take screwdriver,61.33,64.66
+[1] error,64.66,65.06
+[5] Put down screwdriver,65.06,66.6
+[4] Take screwdriver,66.6,67.6
+[7] Picking left,67.6,68.03
+[1] error,68.03,68.77
+[2] Consult sheets,68.77,69.34
+[7] Picking left,69.34,70.04
+[6] Picking in front,70.04,70.5
+[6] Picking in front,70.5,71.47
+[6] Picking in front,71.47,71.87
+[6] Picking in front,71.87,73.04
+[5] Put down screwdriver,73.04,73.41
+[12] Assemble system,73.41,73.97
+[12] Assemble system,73.97,74.34
+[12] Assemble system,74.34,74.77
+[12] Assemble system,74.77,75.14
+[12] Assemble system,75.14,75.51
+[1] Meta action,75.51,75.91
+[2] Consult sheets,75.91,76.31
+[1] Meta action,76.31,76.68
+[1] Meta action,76.68,77.14
+[1] Meta action,77.14,77.68
+[1] Meta action,77.68,78.08
+[12] Assemble system,78.08,78.55
+[12] Assemble system,78.55,79.18
+[12] Assemble system,79.18,80.01
+[12] Assemble system,80.01,80.45
+[12] Assemble system,80.45,81.18
+[12] Assemble system,81.18,81.55
+[12] Assemble system,81.55,81.92
+[10] Take subsystem,81.92,82.48
+[4] Take screwdriver,82.48,83.12
+[12] Assemble system,83.12,83.82
+[12] Assemble system,83.82,84.18
+[12] Assemble system,84.18,84.75
+[12] Assemble system,84.75,85.42
+[12] Assemble system,85.42,85.89
+[12] Assemble system,85.89,86.35
+[12] Assemble system,86.35,86.79
+[12] Assemble system,86.79,88.19
+[12] Assemble system,88.19,88.56
+[12] Assemble system,88.56,89.16
+[12] Assemble system,89.16,89.56
+[12] Assemble system,89.56,89.99
+[12] Assemble system,89.99,90.52
+[12] Assemble system,90.52,92.23
+[5] Put down screwdriver,92.23,92.63
+[11] Put down subsystem,92.63,93.96
+[12] Assemble system,93.96,94.73
+[1] Meta action,94.73,95.2
+[1] Meta action,95.2,95.56
+[1] Meta action,95.56,95.93
+[1] Meta action,95.93,96.73
+[1] Meta action,96.73,97.36
+[1] Meta action,97.36,97.76
+[12] Assemble system,97.76,98.43
+[3] Turn sheets,98.43,98.83
+[2] Consult sheets,98.83,99.2
+[2] Consult sheets,99.2,99.63
+[2] Consult sheets,99.63,100.13
+[1] error,100.13,100.53
+[2] Consult sheets,100.53,101.2
+[2] Consult sheets,101.2,101.6
+[2] Consult sheets,101.6,102
+[4] Take screwdriver,102,102.37
+[1] Meta action,102.37,102.94
+[1] Meta action,102.94,103.34
+[1] Meta action,103.34,103.87
+[1] Meta action,103.87,104.44
+[1] Meta action,104.44,104.84
+[1] Meta action,104.84,105.34
+[1] Meta action,105.34,106.61
+[1] Meta action,106.61,107.44
+[1] Meta action,107.44,107.91
+[1] Meta action,107.91,108.58
+[1] Meta action,108.58,108.94
+[1] Meta action,108.94,109.34
+[1] Meta action,109.34,109.84
+[1] Meta action,109.84,110.28
+[7] Picking left,110.28,111.38
+[1] error,111.38,111.88
+[11] Put down subsystem,111.88,112.35
+[7] Picking left,112.35,112.85
+[12] Assemble system,112.85,113.61
+[12] Assemble system,113.61,114.78
+[12] Assemble system,114.78,115.18
+[12] Assemble system,115.18,115.62
+[12] Assemble system,115.62,116.08
+[5] Put down screwdriver,116.08,116.45
+[5] Put down screwdriver,116.45,116.88
+[12] Assemble system,116.88,117.25
+[12] Assemble system,117.25,118.02
+[12] Assemble system,118.02,118.59
+[11] Put down subsystem,118.59,119.72
+[12] Assemble system,119.72,120.15
+[12] Assemble system,120.15,120.75
+[12] Assemble system,120.75,121.59
+[12] Assemble system,121.59,122.99
+[1] Meta action,122.99,123.46
+[11] Put down subsystem,123.46,124.26
+[6] Picking in front,124.26,124.62
+[6] Picking in front,124.62,125.33
+[6] Picking in front,125.33,126.19
+[6] Picking in front,126.19,126.56
+[6] Picking in front,126.56,126.96
+[6] Picking in front,126.96,127.63
+[12] Assemble system,127.63,128.13
+[12] Assemble system,128.13,130.53
+[1] Meta action,130.53,130.93
+[1] Meta action,130.93,131.33
+[1] Meta action,131.33,131.76
+[1] Meta action,131.76,132.13
+[1] Meta action,132.13,133.1
+[5] Put down screwdriver,133.1,133.5
+[12] Assemble system,133.5,133.9
+[12] Assemble system,133.9,134.33
+[12] Assemble system,134.33,134.77
+[6] Picking in front,134.77,136.7
+[6] Picking in front,136.7,137.1
+[6] Picking in front,137.1,137.54
+[6] Picking in front,137.54,138.14
+[12] Assemble system,138.14,139.84
+[1] Meta action,139.84,140.31
+[12] Assemble system,140.31,141.01
+[11] Put down subsystem,141.01,142.48
+[1] Meta action,142.48,143.61
+[7] Picking left,143.61,143.98
+[7] Picking left,143.98,144.81
+[7] Picking left,144.81,145.21
+[12] Assemble system,145.21,146.18
+[1] Meta action,146.18,146.78
+[6] Picking in front,146.78,147.15
+[4] Take screwdriver,147.15,147.95
+[4] Take screwdriver,147.95,148.48
+[5] Put down screwdriver,148.48,149.12
+[12] Assemble system,149.12,149.52
+[12] Assemble system,149.52,149.98
+[12] Assemble system,149.98,150.82
+[12] Assemble system,150.82,151.35
+[12] Assemble system,151.35,152.32
+[12] Assemble system,152.32,152.79
+[5] Put down screwdriver,152.79,154.22
+[1] error,154.22,154.85
+[1] Meta action,154.85,155.32
+[7] Picking left,155.32,156.52
+[12] Assemble system,156.52,156.92
+[6] Picking in front,156.92,158.02
+[6] Picking in front,158.02,160.13
+[7] Picking left,160.13,160.59
+[11] Put down subsystem,160.59,161.03
+[7] Picking left,161.03,161.49
+[6] Picking in front,161.49,162.06
+[6] Picking in front,162.06,162.56
+[6] Picking in front,162.56,163.1
+[6] Picking in front,163.1,163.53
+[6] Picking in front,163.53,164.13
+[12] Assemble system,164.13,164.73
+[12] Assemble system,164.73,165.87
+[12] Assemble system,165.87,166.23
+[12] Assemble system,166.23,166.83
+[12] Assemble system,166.83,167.23
+[12] Assemble system,167.23,170
+[1] Meta action,170,170.4
+[7] Picking left,170.4,171.34
+[7] Picking left,171.34,172.27
+[1] Meta action,172.27,172.84
+[12] Assemble system,172.84,173.64
+[12] Assemble system,173.64,174.01
+[12] Assemble system,174.01,175.44
+[1] error,175.44,175.81
+[6] Picking in front,175.81,177.91
+[12] Assemble system,177.91,178.88
+[12] Assemble system,178.88,179.38
+[12] Assemble system,179.38,179.85
+[12] Assemble system,179.85,180.58
+[12] Assemble system,180.58,180.98
+[12] Assemble system,180.98,181.65
+[12] Assemble system,181.65,182.02
+[12] Assemble system,182.02,182.52
+[12] Assemble system,182.52,182.95
+[11] Put down subsystem,182.95,183.52
+[6] Picking in front,183.52,185.59
+[6] Picking in front,185.59,186.59
+[12] Assemble system,186.59,187.29
+[11] Put down subsystem,187.29,188.22
+[7] Picking left,188.22,189.32
+[12] Assemble system,189.32,190.49
+[12] Assemble system,190.49,191.06
+[12] Assemble system,191.06,191.46
+[12] Assemble system,191.46,191.96
+[11] Put down subsystem,191.96,192.53
+[12] Assemble system,192.53,192.89
+[1] Meta action,192.89,193.26
+[12] Assemble system,193.26,193.86
+[12] Assemble system,193.86,194.76
+[12] Assemble system,194.76,195.4
+[5] Put down screwdriver,195.4,197.3
+[12] Assemble system,197.3,197.96
+[1] Meta action,197.96,198.4
+[6] Picking in front,198.4,199.6
+[6] Picking in front,199.6,200.17
+[12] Assemble system,200.17,200.7
+[12] Assemble system,200.7,201.53
+[12] Assemble system,201.53,202.14
+[12] Assemble system,202.14,202.67
+[12] Assemble system,202.67,203.04
+[12] Assemble system,203.04,203.5
+[12] Assemble system,203.5,203.94
+[12] Assemble system,203.94,204.3
+[12] Assemble system,204.3,204.74
+[12] Assemble system,204.74,205.27
+[1] error,205.27,207.91
+[1] error,207.91,208.78
+[2] Consult sheets,208.78,209.84
+[2] Consult sheets,209.84,213.18
+[1] Meta action,213.18,214.98
+[10] Take subsystem,214.98,217.98
+[12] Assemble system,217.98,218.48
+[12] Assemble system,218.48,218.89
+[9] Put down measuring rod,218.89,219.82
+[11] Put down subsystem,219.82,220.39
+[10] Take subsystem,220.39,220.75
+[10] Take subsystem,220.75,221.82
+[11] Put down subsystem,221.82,222.19
+[12] Assemble system,222.19,222.56
+[12] Assemble system,222.56,223.22
+[1] error,223.22,223.62
+[12] Assemble system,223.62,224.09
+[12] Assemble system,224.09,224.46
+[10] Take subsystem,224.46,224.99
+[6] Picking in front,224.99,225.56
+[2] Consult sheets,225.56,233.93
+[7] Picking left,233.93,234.53
+[1] error,234.53,235.27
+[1] Meta action,235.27,235.7
+[5] Put down screwdriver,235.7,236.1
+[11] Put down subsystem,236.1,236.57
+[2] Consult sheets,236.57,237
+[2] Consult sheets,237,237.4
+[2] Consult sheets,237.4,237.77
+[3] Turn sheets,237.77,238.5
+[1] Meta action,238.5,239.34
+[1] Meta action,239.34,239.84
+[1] Meta action,239.84,240.47
+[1] Meta action,240.47,241.14
+[6] Picking in front,241.14,242.48
+[6] Picking in front,242.48,242.88
+[6] Picking in front,242.88,243.51
+[6] Picking in front,243.51,244.11
+[6] Picking in front,244.11,244.51
+[6] Picking in front,244.51,244.88
+[6] Picking in front,244.88,245.25
+[5] Put down screwdriver,245.25,246.11
+[1] Meta action,246.11,246.85
+[1] Meta action,246.85,247.55
+[1] error,247.55,248.08
+[11] Put down subsystem,248.08,248.48
+[7] Picking left,248.48,248.85
+[7] Picking left,248.85,249.25
+[6] Picking in front,249.25,249.65
+[6] Picking in front,249.65,250.02
+[6] Picking in front,250.02,250.52
+[6] Picking in front,250.52,250.98
+[12] Assemble system,250.98,251.92
+[1] Meta action,251.92,252.35
+[12] Assemble system,252.35,253.09
+[12] Assemble system,253.09,254.02
+[12] Assemble system,254.02,254.39
+[12] Assemble system,254.39,255.05
+[12] Assemble system,255.05,255.49
+[12] Assemble system,255.49,255.86
+[5] Put down screwdriver,255.86,256.39
+[1] error,256.39,256.96
+[7] Picking left,256.96,258.42
+[7] Picking left,258.42,258.93
+[6] Picking in front,258.93,259.39
+[12] Assemble system,259.39,260.06
+[12] Assemble system,260.06,260.49
+[12] Assemble system,260.49,260.93
+[12] Assemble system,260.93,261.36
+[12] Assemble system,261.36,261.79
+[12] Assemble system,261.79,262.16
+[12] Assemble system,262.16,262.66
+[12] Assemble system,262.66,263.26
+[12] Assemble system,263.26,263.73
+[12] Assemble system,263.73,264.3
+[12] Assemble system,264.3,264.66
+[12] Assemble system,264.66,265.23
+[12] Assemble system,265.23,265.6
+[12] Assemble system,265.6,266.17
+[12] Assemble system,266.17,270.6
+[12] Assemble system,270.6,271.27
+[4] Take screwdriver,271.27,271.7
+[1] Meta action,271.7,272.17
+[4] Take screwdriver,272.17,273.74
+[1] Meta action,273.74,274.61
+[1] Meta action,274.61,275.11
+[7] Picking left,275.11,275.58
+[1] Meta action,275.58,276.11
+[1] Meta action,276.11,276.48
+[7] Picking left,276.48,277.74
+[2] Consult sheets,277.74,278.58
+[2] Consult sheets,278.58,279.61
+[11] Put down subsystem,279.61,280.38
+[5] Put down screwdriver,280.38,281.88
+[1] Meta action,281.88,282.28
+[1] Meta action,282.28,283.12
+[7] Picking left,283.12,283.85
+[6] Picking in front,283.85,284.62
+[6] Picking in front,284.62,285.02
+[6] Picking in front,285.02,285.69
+[6] Picking in front,285.69,286.05
+[12] Assemble system,286.05,286.49
+[12] Assemble system,286.49,286.92
+[12] Assemble system,286.92,287.49
+[12] Assemble system,287.49,288.42
+[12] Assemble system,288.42,289.56
+[12] Assemble system,289.56,289.92
+[12] Assemble system,289.92,290.29
+[12] Assemble system,290.29,290.66
+[12] Assemble system,290.66,291.29
+[12] Assemble system,291.29,291.76
+[12] Assemble system,291.76,292.13
+[12] Assemble system,292.13,293.53
+[12] Assemble system,293.53,293.93
+[12] Assemble system,293.93,294.53
+[7] Picking left,294.53,294.93
+[7] Picking left,294.93,295.63
+[7] Picking left,295.63,296
+[7] Picking left,296,296.6
+[2] Consult sheets,296.6,297
+[11] Put down subsystem,297,297.36
+[12] Assemble system,297.36,297.93
+[12] Assemble system,297.93,298.33
+[12] Assemble system,298.33,298.73
+[12] Assemble system,298.73,299.27
+[12] Assemble system,299.27,299.8
+[7] Picking left,299.8,300.23
+[7] Picking left,300.23,302.07
+[12] Assemble system,302.07,304.17
+[12] Assemble system,304.17,305
+[12] Assemble system,305,305.54
+[12] Assemble system,305.54,306.17
+[12] Assemble system,306.17,306.71
+[12] Assemble system,306.71,307.14
+[12] Assemble system,307.14,307.54
+[5] Put down screwdriver,307.54,307.91
+[7] Picking left,307.91,308.68
+[7] Picking left,308.68,309.21
+[7] Picking left,309.21,310.18
+[12] Assemble system,310.18,311.38
+[12] Assemble system,311.38,312.11
+[12] Assemble system,312.11,312.95
+[12] Assemble system,312.95,313.38
+[12] Assemble system,313.38,314.25
+[12] Assemble system,314.25,314.65
+[12] Assemble system,314.65,315.48
+[12] Assemble system,315.48,316.35
+[12] Assemble system,316.35,321.02
+[5] Put down screwdriver,321.02,321.99
+[1] error,321.99,326.16
+[2] Consult sheets,326.16,327.63
+[5] Put down screwdriver,327.63,328.46
+[12] Assemble system,328.46,329.73
+[6] Picking in front,329.73,330.6
+[6] Picking in front,330.6,330.96
+[11] Put down subsystem,330.96,331.33
+[6] Picking in front,331.33,331.76
+[6] Picking in front,331.76,332.4
+[6] Picking in front,332.4,332.9
+[6] Picking in front,332.9,333.33
+[6] Picking in front,333.33,334.1
+[6] Picking in front,334.1,334.47
+[6] Picking in front,334.47,334.83
+[11] Put down subsystem,334.83,335.23
+[6] Picking in front,335.23,336.74
+[12] Assemble system,336.74,337.44
+[7] Picking left,337.44,337.9
+[7] Picking left,337.9,338.34
+[7] Picking left,338.34,338.71
+[7] Picking left,338.71,339.31
+[7] Picking left,339.31,339.87
+[12] Assemble system,339.87,340.24
+[12] Assemble system,340.24,341.51
+[12] Assemble system,341.51,341.97
+[12] Assemble system,341.97,342.38
+[12] Assemble system,342.38,343.34
+[12] Assemble system,343.34,343.71
+[12] Assemble system,343.71,344.31
+[12] Assemble system,344.31,344.91
+[12] Assemble system,344.91,345.81
+[12] Assemble system,345.81,346.41
+[12] Assemble system,346.41,348.51
+[1] error,348.51,349.52
+[12] Assemble system,349.52,350.05
+[12] Assemble system,350.05,350.58
+[7] Picking left,350.58,351.58
+[7] Picking left,351.58,352.02
+[1] error,352.02,353.89
+[12] Assemble system,353.89,355.72
+[1] error,355.72,357.36
+[12] Assemble system,357.36,357.92
+[12] Assemble system,357.92,359.53
+[12] Assemble system,359.53,360.06
+[12] Assemble system,360.06,360.49
+[12] Assemble system,360.49,361.76
+[7] Picking left,361.76,362.3
+[7] Picking left,362.3,363.23
+[10] Take subsystem,363.23,363.7
+[12] Assemble system,363.7,364.26
+[12] Assemble system,364.26,364.63
+[12] Assemble system,364.63,365.1
+[12] Assemble system,365.1,365.57
+[12] Assemble system,365.57,366.13
+[12] Assemble system,366.13,368.74
+[12] Assemble system,368.74,369.57
+[12] Assemble system,369.57,369.94
+[5] Put down screwdriver,369.94,370.74
+[12] Assemble system,370.74,371.14
+[1] error,371.14,372.11
+[12] Assemble system,372.11,372.54
+[12] Assemble system,372.54,373.54
+[12] Assemble system,373.54,373.91
+[12] Assemble system,373.91,374.27
+[12] Assemble system,374.27,374.87
+[11] Put down subsystem,374.87,375.44
+[4] Take screwdriver,375.44,376.61
+[5] Put down screwdriver,376.61,377.01
+[4] Take screwdriver,377.01,377.61
+[12] Assemble system,377.61,380.21
+[12] Assemble system,380.21,380.91
+[1] Meta action,380.91,381.48
+[2] Consult sheets,381.48,384.52
+[7] Picking left,384.52,384.88
+[7] Picking left,384.88,385.32
+[10] Take subsystem,385.32,385.69
+[10] Take subsystem,385.69,386.19
+[7] Picking left,386.19,386.55
+[6] Picking in front,386.55,386.95
+[12] Assemble system,386.95,388.02
+[12] Assemble system,388.02,388.79
+[6] Picking in front,388.79,389.36
+[12] Assemble system,389.36,390.99
+[12] Assemble system,390.99,391.46
+[12] Assemble system,391.46,393.03
+[1] Meta action,393.03,393.39
+[7] Picking left,393.39,393.76
+[6] Picking in front,393.76,394.19
+[6] Picking in front,394.19,394.56
+[6] Picking in front,394.56,395.09
+[12] Assemble system,395.09,395.5
+[12] Assemble system,395.5,395.96
+[12] Assemble system,395.96,396.4
+[12] Assemble system,396.4,396.86
+[12] Assemble system,396.86,397.23
+[12] Assemble system,397.23,397.6
+[7] Picking left,397.6,398.03
+[7] Picking left,398.03,398.4
+[7] Picking left,398.4,398.77
+[7] Picking left,398.77,399.13
+[2] Consult sheets,399.13,399.5
+[12] Assemble system,399.5,400.37
+[12] Assemble system,400.37,400.77
+[1] unknown,400.77,401.7
+[1] Meta action,401.7,402.07
+[12] Assemble system,402.07,402.44
+[12] Assemble system,402.44,404.44
+[12] Assemble system,404.44,404.8
+[12] Assemble system,404.8,405.41
+[11] Put down subsystem,405.41,409.51
+[4] Take screwdriver,409.51,409.91
+[4] Take screwdriver,409.91,410.61
+[5] Put down screwdriver,410.61,413.95
+[12] Assemble system,413.95,414.51
+[12] Assemble system,414.51,415.48
+[12] Assemble system,415.48,416.12
+[11] Put down subsystem,416.12,416.48
+[4] Take screwdriver,416.48,416.98
+[5] Put down screwdriver,416.98,417.48
+[6] Picking in front,417.48,418.18
+[12] Assemble system,418.18,418.95
+[6] Picking in front,418.95,419.69
+[6] Picking in front,419.69,421.39
+[6] Picking in front,421.39,421.92
+[6] Picking in front,421.92,422.56
+[6] Picking in front,422.56,423.06
+[6] Picking in front,423.06,423.52
+[6] Picking in front,423.52,423.89
+[6] Picking in front,423.89,424.26
+[7] Picking left,424.26,424.69
+[12] Assemble system,424.69,425.06
+[1] Meta action,425.06,425.43
+[6] Picking in front,425.43,425.79
+[7] Picking left,425.79,426.23
+[7] Picking left,426.23,426.59
+[6] Picking in front,426.59,426.96
+[6] Picking in front,426.96,427.33
+[6] Picking in front,427.33,427.73
+[7] Picking left,427.73,428.13
+[7] Picking left,428.13,429.36
+[12] Assemble system,429.36,429.8
+[12] Assemble system,429.8,430.16
+[7] Picking left,430.16,432.63
+[12] Assemble system,432.63,433.8
+[12] Assemble system,433.8,434.63
+[12] Assemble system,434.63,435
+[4] Take screwdriver,435,435.54
+[4] Take screwdriver,435.54,436.24
+[1] error,436.24,436.74
+[12] Assemble system,436.74,437.27
+[12] Assemble system,437.27,437.67
+[12] Assemble system,437.67,438.17
+[12] Assemble system,438.17,438.57
+[12] Assemble system,438.57,439.11
+[12] Assemble system,439.11,439.61
+[5] Put down screwdriver,439.61,440.17
+[1] error,440.17,440.57
+[4] Take screwdriver,440.57,441.04
+[5] Put down screwdriver,441.04,441.57
+[1] Meta action,441.57,441.94
+[11] Put down subsystem,441.94,442.88
+[1] Meta action,442.88,443.28
+[6] Picking in front,443.28,444.68
+[2] Consult sheets,444.68,448.11
+[2] Consult sheets,448.11,448.61
+[2] Consult sheets,448.61,450.78
+[6] Picking in front,450.78,451.22
+[1] Meta action,451.22,452.59
+[12] Assemble system,452.59,454.32
+[12] Assemble system,454.32,455.12
+[12] Assemble system,455.12,455.69
+[12] Assemble system,455.69,456.12
+[12] Assemble system,456.12,456.52
+[12] Assemble system,456.52,456.89
+[12] Assemble system,456.89,457.26
+[12] Assemble system,457.26,457.62
+[12] Assemble system,457.62,458.02
+[12] Assemble system,458.02,458.42
+[12] Assemble system,458.42,459.06
+[7] Picking left,459.06,460.86
+[7] Picking left,460.86,461.36
+[12] Assemble system,461.36,461.86
+[12] Assemble system,461.86,462.26
+[12] Assemble system,462.26,462.66
+[12] Assemble system,462.66,463.03
+[12] Assemble system,463.03,463.76
+[12] Assemble system,463.76,464.26
+[1] Meta action,464.26,464.76
+[6] Picking in front,464.76,465.8
+[6] Picking in front,465.8,466.3
+[6] Picking in front,466.3,467.17
+[1] error,467.17,468.77
+[12] Assemble system,468.77,469.14
+[12] Assemble system,469.14,469.5
+[12] Assemble system,469.5,471.34
+[6] Picking in front,471.34,471.77
+[12] Assemble system,471.77,472.81
+[12] Assemble system,472.81,473.31
+[12] Assemble system,473.31,473.74
+[12] Assemble system,473.74,474.11
+[12] Assemble system,474.11,475.21
+[12] Assemble system,475.21,477.04
+[7] Picking left,477.04,478.24
+[2] Consult sheets,478.24,478.71
+[7] Picking left,478.71,479.31
+[1] error,479.31,479.68
+[11] Put down subsystem,479.68,480.25
+[12] Assemble system,480.25,480.91
+[12] Assemble system,480.91,481.28
+[10] Take subsystem,481.28,481.91
+[12] Assemble system,481.91,482.72
+[12] Assemble system,482.72,483.18
+[12] Assemble system,483.18,483.58
+[12] Assemble system,483.58,485.32
+[12] Assemble system,485.32,487.25
+[12] Assemble system,487.25,487.99
+[12] Assemble system,487.99,488.79
+[12] Assemble system,488.79,489.16
+[12] Assemble system,489.16,489.86
+[12] Assemble system,489.86,490.22
+[10] Take subsystem,490.22,490.59
+[12] Assemble system,490.59,491.92
+[12] Assemble system,491.92,492.79
+[12] Assemble system,492.79,493.16
+[12] Assemble system,493.16,493.66
+[12] Assemble system,493.66,494.19
+[12] Assemble system,494.19,494.63
+[12] Assemble system,494.63,495.43
+[12] Assemble system,495.43,495.9
+[12] Assemble system,495.9,496.4
+[12] Assemble system,496.4,496.8
+[12] Assemble system,496.8,497.16
+[12] Assemble system,497.16,497.56
+[10] Take subsystem,497.56,498.9
+[12] Assemble system,498.9,499.5
+[12] Assemble system,499.5,501.8
+[12] Assemble system,501.8,502.7
+[12] Assemble system,502.7,503.1
+[12] Assemble system,503.1,503.57
+[12] Assemble system,503.57,503.94
+[12] Assemble system,503.94,504.3
+[5] Put down screwdriver,504.3,504.67
+[5] Put down screwdriver,504.67,505.14
+[5] Put down screwdriver,505.14,506.14
+[12] Assemble system,506.14,506.51
+[12] Assemble system,506.51,506.87
+[12] Assemble system,506.87,507.24
+[1] error,507.24,507.67
+[12] Assemble system,507.67,508.04
+[1] error,508.04,508.41
+[12] Assemble system,508.41,508.88
+[12] Assemble system,508.88,509.31
+[1] Meta action,509.31,509.74
+[4] Take screwdriver,509.74,510.38
+[4] Take screwdriver,509.74,510.38
+[5] Put down screwdriver,510.38,510.74
+[5] Put down screwdriver,510.74,515.88
+[12] Assemble system,515.88,516.35
+[9] Put down measuring rod,516.35,517.05
+[9] Put down measuring rod,517.05,520.25
+[8] Take measuring rod,520.25,520.85
+[8] Take measuring rod,520.85,521.25
+[12] Assemble system,521.25,521.69
+[1] error,521.69,522.15
+[8] Take measuring rod,522.15,522.52
+[12] Assemble system,522.52,523.09
+[9] Put down measuring rod,523.09,525.16
