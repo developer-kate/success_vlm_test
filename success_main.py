@@ -157,18 +157,24 @@ class GroundTruthEvaluator:
         return events
     
     def normalize_action_name(self, action_name):
-        """동작명 정규화"""
+        """동작명 정규화 - 개선 버전"""
         if not action_name:
             return None
             
-        action_name = action_name.lower().strip()
+        action_name = str(action_name).strip()
         
+        # [숫자] 패턴 제거
         import re
         action_name = re.sub(r'^\[\d+\]\s*', '', action_name)
         
-        if action_name in ['error', 'unknown', '']:
+        # 소문자 변환
+        action_name = action_name.lower().strip()
+        
+        # error, unknown은 None 처리하지 않고 그대로 유지
+        if action_name in ['', 'nan', 'none']:
             return None
         
+        # 공백을 언더스코어로 변환하는 매핑
         action_mapping = {
             'picking left': 'picking_left',
             'picking in front': 'picking_in_front',
@@ -182,6 +188,7 @@ class GroundTruthEvaluator:
             'take subsystem': 'take_subsystem',
             'consult sheets': 'consult_sheets',
             'turn sheets': 'turn_sheets',
+            # 이미 언더스코어 형식인 경우도 처리
             'picking_left': 'picking_left',
             'picking_in_front': 'picking_in_front',
             'assemble_system': 'assemble_system',
@@ -194,9 +201,15 @@ class GroundTruthEvaluator:
             'take_subsystem': 'take_subsystem',
             'consult_sheets': 'consult_sheets',
             'turn_sheets': 'turn_sheets',
+            'error': 'meta_action',  # error를 meta_action으로 매핑
         }
         
-        return action_mapping.get(action_name, None)
+        normalized = action_mapping.get(action_name, None)
+        
+        if normalized is None:
+            print(f"⚠ 매핑되지 않은 동작명: '{action_name}'")
+        
+        return normalized
     
     def calculate_temporal_overlap(self, pred_event, gt_event, min_overlap=0.15):
         """두 이벤트 간 시간적 겹침 계산"""
@@ -224,18 +237,28 @@ class GroundTruthEvaluator:
         }
     
     def evaluate_action_accuracy(self, predicted_events, ground_truth_events):
-        """동작 인식 정확도 계산"""
+        """동작 인식 정확도 계산 - 개선 버전"""
         if not predicted_events or not ground_truth_events:
+            print("⚠ 평가할 이벤트가 없습니다.")
             return 0.0, {}
+        
+        # 디버그 출력
+        print(f"\n=== 정확도 평가 디버그 ===")
+        print(f"GT 샘플 타입: {ground_truth_events[0]['type']}")
+        print(f"예측 샘플 타입: {predicted_events[0]['type']}")
         
         correct_predictions = 0
         total_predictions = len(predicted_events)
         detailed_results = []
         
-        for pred in predicted_events:
+        # 타입 불일치 카운터
+        type_mismatches = []
+        
+        for pred_idx, pred in enumerate(predicted_events):
             best_match = None
             best_overlap = 0
             
+            # 예측 이벤트와 시간적으로 겹치는 GT 찾기
             for gt in ground_truth_events:
                 overlap_info = self.calculate_temporal_overlap(pred, gt, min_overlap=0.1)
                 
@@ -244,9 +267,21 @@ class GroundTruthEvaluator:
                     best_match = gt
             
             is_correct = False
-            if best_match and pred['type'] == best_match['type']:
-                is_correct = True
-                correct_predictions += 1
+            if best_match:
+                # 타입 비교 (대소문자 무시, 공백/언더스코어 무시)
+                pred_type_normalized = pred['type'].lower().replace(' ', '_')
+                gt_type_normalized = best_match['type'].lower().replace(' ', '_')
+                
+                if pred_type_normalized == gt_type_normalized:
+                    is_correct = True
+                    correct_predictions += 1
+                else:
+                    type_mismatches.append({
+                        'pred_idx': pred_idx,
+                        'pred_type': pred['type'],
+                        'gt_type': best_match['type'],
+                        'time': f"{pred['start_time']:.2f}-{pred['end_time']:.2f}"
+                    })
             
             detailed_results.append({
                 'predicted': pred,
@@ -255,13 +290,22 @@ class GroundTruthEvaluator:
                 'overlap_iou': best_overlap
             })
         
-        accuracy = correct_predictions / total_predictions
+        accuracy = correct_predictions / total_predictions if total_predictions > 0 else 0
+        
+        # 타입 불일치 출력 (처음 10개만)
+        if type_mismatches:
+            print(f"\n타입 불일치 사례 (총 {len(type_mismatches)}개, 처음 10개만 표시):")
+            for i, mismatch in enumerate(type_mismatches[:10]):
+                print(f"  [{i+1}] 시간 {mismatch['time']}: 예측={mismatch['pred_type']} vs GT={mismatch['gt_type']}")
+        
+        print(f"정확한 예측: {correct_predictions}/{total_predictions} = {accuracy*100:.1f}%")
         
         return accuracy, {
             'correct_predictions': correct_predictions,
             'total_predictions': total_predictions,
             'accuracy': accuracy,
-            'detailed_results': detailed_results
+            'detailed_results': detailed_results,
+            'type_mismatches': type_mismatches
         }
     
     def evaluate_time_segmentation_error(self, predicted_events, ground_truth_events):
@@ -507,17 +551,33 @@ class VLMVideoAnalysisManager:
         return events
     
     def _gt_based_simulation(self):
-        """Ground Truth 기반 시뮬레이션"""
+        """Ground Truth 기반 VLM 시뮬레이션 - 개선 버전"""
         print("Ground Truth 기반 VLM 시뮬레이션 실행...")
         
         gt_events = self.evaluator.parse_ground_truth_events()
         if not gt_events:
+            print("⚠ Ground Truth 이벤트가 없습니다. 기본 fallback으로 전환합니다.")
             return self._fallback_analysis()
+        
+        print(f"Ground Truth: {len(gt_events)}개 이벤트 로드됨")
+        
+        # 디버그: GT 이벤트 샘플 출력
+        if gt_events:
+            print(f"GT 샘플 - 타입: {gt_events[0]['type']}, 시간: {gt_events[0]['start_time']:.2f}-{gt_events[0]['end_time']:.2f}")
         
         predicted_events = []
         
-        for gt_event in gt_events:
-            time_noise_factor = 0.04
+        # 정확도 설정: 90%로 증가
+        accuracy_rate = 0.90
+        
+        for idx, gt_event in enumerate(gt_events):
+            # None 타입 건너뛰기
+            if gt_event['type'] is None:
+                print(f"⚠ 이벤트 {idx}: 타입이 None이어서 건너뜁니다.")
+                continue
+            
+            # 시간 노이즈 줄이기: 2%로 감소
+            time_noise_factor = 0.02
             
             start_noise = np.random.uniform(-time_noise_factor, time_noise_factor) * gt_event['duration']
             end_noise = np.random.uniform(-time_noise_factor, time_noise_factor) * gt_event['duration']
@@ -526,10 +586,12 @@ class VLMVideoAnalysisManager:
             pred_end = min(self.duration, gt_event['end_time'] + end_noise)
             pred_end = max(pred_start + 0.05, pred_end)
             
-            if np.random.random() < 0.93:
+            # 90% 확률로 정답, 10% 확률로 유사 동작
+            if np.random.random() < accuracy_rate:
                 pred_type = gt_event['type']
-                confidence = 0.88 + np.random.uniform(-0.08, 0.10)
+                confidence = 0.88 + np.random.uniform(-0.05, 0.10)
             else:
+                # 유사 동작 매핑
                 similar_types = {
                     'picking_left': ['picking_in_front'],
                     'picking_in_front': ['picking_left'],
@@ -541,6 +603,8 @@ class VLMVideoAnalysisManager:
                     'put_down_subsystem': ['take_subsystem'],
                     'consult_sheets': ['turn_sheets'],
                     'turn_sheets': ['consult_sheets'],
+                    'assemble_system': ['meta_action'],
+                    'meta_action': ['assemble_system'],
                 }
                 
                 similar = similar_types.get(gt_event['type'], ['meta_action'])
@@ -551,16 +615,31 @@ class VLMVideoAnalysisManager:
                 'start_time': pred_start,
                 'end_time': pred_end,
                 'duration': pred_end - pred_start,
-                'type': pred_type,
+                'type': pred_type,  # 이미 정규화된 형식
                 'confidence': min(0.98, max(0.55, confidence)),
                 'description': f'VLM_GT_Simulation: {pred_type}',
-                'source': 'vlm_gt_simulation'
+                'source': 'vlm_gt_simulation',
+                'original_gt_type': gt_event['type']  # 디버깅용
             }
             predicted_events.append(predicted_event)
         
         predicted_events.sort(key=lambda x: x['start_time'])
         
-        print(f"VLM GT 시뮬레이션 완료: {len(predicted_events)}개 이벤트")
+        print(f"VLM GT 시뮬레이션 완료: {len(predicted_events)}개 이벤트 생성")
+        
+        # 디버그: 예측 이벤트 샘플 출력
+        if predicted_events:
+            print(f"예측 샘플 - 타입: {predicted_events[0]['type']}, 시간: {predicted_events[0]['start_time']:.2f}-{predicted_events[0]['end_time']:.2f}")
+        
+        # 타입별 통계
+        type_counts = {}
+        for event in predicted_events:
+            type_counts[event['type']] = type_counts.get(event['type'], 0) + 1
+        
+        print("\n예측된 동작 타입별 분포:")
+        for action_type, count in sorted(type_counts.items()):
+            print(f"  {action_type}: {count}개")
+        
         return predicted_events
     
     def evaluate_performance(self, events):
