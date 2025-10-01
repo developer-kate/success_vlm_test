@@ -407,4 +407,4 @@ if __name__ == "__main__":
             return script_filename
         except Exception as e:
             self._log(f"스크립트 파일 저장 중 오류 발생: {e}", 'error')
-            return ""       
+            return ""      
